@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-import com.aliucord.gradle.AliucordExtension
+import com.fredcord.gradle.AliucordExtension
 import com.android.build.gradle.BaseExtension
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
@@ -8,7 +8,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     alias(libs.plugins.kotlin) apply false
     alias(libs.plugins.android.library) apply false
-    alias(libs.plugins.aliucord.gradle) apply false
+    alias(libs.plugins.fredcord.gradle) apply false
     alias(libs.plugins.dokka) apply false
 }
 
@@ -16,17 +16,17 @@ subprojects {
     apply {
         plugin("com.android.library")
         plugin("kotlin-android")
-        plugin("com.aliucord.gradle")
+        plugin("com.fredcord.gradle")
     }
 
     repositories {
         google()
         mavenCentral()
-        maven("https://maven.aliucord.com/snapshots")
+        maven("https://maven.fredcord.com/snapshots")
     }
 
     android {
-        namespace = "com.aliucord"
+        namespace = "com.fredcord"
 
         compileSdkVersion(30)
 
@@ -66,5 +66,5 @@ subprojects {
 fun Project.android(configuration: BaseExtension.() -> Unit) =
     extensions.getByName<BaseExtension>("android").configuration()
 
-fun Project.aliucord(configuration: AliucordExtension.() -> Unit) =
-    extensions.getByName<AliucordExtension>("aliucord").configuration()
+fun Project.aliucord(configuration: FredcordExtension.() -> Unit) =
+    extensions.getByName<FredcordExtension>("fredcord").configuration()
