@@ -4,7 +4,7 @@
  * Licensed under the Open Software License version 3.0
  */
 
-package com.aliucord;
+package com.fredcord;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
