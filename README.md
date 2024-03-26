@@ -1,4 +1,4 @@
-<h1 align="center">Aliucord</h1>
+<h1 align="center">Fredcord</h1>
 <p align="center">
   <a href="https://discord.gg/RksVkhn7bg">
     <img alt="Discord" src="https://img.shields.io/badge/build-online-brightgreen%2C?style=social&logo=discord&logoColor=%23592D00&label=Fredcord&labelColor=%23592D00&color=%23592D00&cacheSeconds=777&link=img">
